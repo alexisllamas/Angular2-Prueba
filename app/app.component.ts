@@ -11,7 +11,7 @@ import { HeroDetailComponent } from './hero-detail.component';
   template: `
     <h1>{{title}}</h1>
     <nav>
-        <a [routerLink]="['Dashboard']">Dashboard</a>
+        <a [routerLink]="['Dashboard']">Top 5</a>
         <a [routerLink]="['Heroes']">Heroes</a>
     </nav>
     <router-outlet></router-outlet>
@@ -26,7 +26,7 @@ import { HeroDetailComponent } from './hero-detail.component';
 
 @RouteConfig([
   {
-    path: '/dashboard',
+    path: '/top',
     name: 'Dashboard',
     component: DashboardComponent,
     useAsDefault: true
@@ -44,5 +44,5 @@ import { HeroDetailComponent } from './hero-detail.component';
 ])
 
 export class AppComponent {
-  title = 'Tour of Heroes';
+  title = 'Catálogo de superheroes';
 }
